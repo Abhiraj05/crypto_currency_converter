@@ -56,7 +56,7 @@ function App() {
   return (
     <>
       <div className="flex justify-center items-center min-h-screen">
-        <div className="bg-slate-100  opacity-100 pl-7 pr-7 pt-9 pb-10 rounded-xl md:pt-10 md:pb-14 md:pl-12 md:pr-12 border-slate-600 border-[1px] border-solid shadow-2xl">
+        <div className="bg-slate-50  opacity-100 pl-7 pr-7 pt-9 pb-10 rounded-xl md:pt-10 md:pb-14 md:pl-12 md:pr-12 border-slate-600 border-[1px] border-solid shadow-2xl">
           <div className="flex justify-center items-center mb-7 gap-6">
             <div>
               <img className="md:w-24 md:h-24 w-20 h-20 text-center" src={cryptologo} alt="" />
