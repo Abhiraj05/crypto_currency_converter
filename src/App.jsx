@@ -80,7 +80,7 @@ function App() {
               className="md:h-12 md:w-64 w-[205px] h-10 focus:outline-none pl-4 font-sans font-semibold text-lg rounded-tl-lg rounded-bl-lg  border-slate-600 border-[1px] border-solid"
             ></input>
             <select
-              className="bg-slate-600 text-white  pl-2 block md:w-full md:h-12 h-10 focus:outline-none overflow-hidden text-center  capitalize border-slate-600 border-2 border-solid rounded-tr-lg rounded-br-lg hover:bg-slate-700 hover:border-slate-700"
+              className="bg-slate-600 text-white  pl-2 block md:w-full md:h-12 h-10 focus:outline-none overflow-hidden text-center uppercase border-slate-600 border-2 border-solid rounded-tr-lg rounded-br-lg hover:bg-slate-700 hover:border-slate-700"
               name=""
               id="listone"
               onChange={(event) => {
@@ -111,7 +111,7 @@ function App() {
               className="md:h-12 md:w-64  w-[205px] h-10 focus:outline-none pl-4 font-sans font-semibold text-lg rounded-tl-lg rounded-bl-lg border-slate-600 border-[1px] border-solid"
             ></input>
             <select
-              className="bg-slate-600 text-white block w-full pl-2 md:h-12 h-10 focus:outline-none  overflow-hidden text-center capitalize border-slate-600 border-2 border-solid rounded-tr-lg rounded-br-lg hover:bg-slate-700 hover:border-slate-700"
+              className="bg-slate-600 text-white block w-full pl-2 md:h-12 h-10 focus:outline-none  overflow-hidden text-center uppercase border-slate-600 border-2 border-solid rounded-tr-lg rounded-br-lg hover:bg-slate-700 hover:border-slate-700"
               name=""
               id="listtwo"
               onChange={(event) => {
