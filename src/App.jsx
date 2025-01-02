@@ -32,7 +32,7 @@ function App() {
   }, []);
 
   function Calculation() {
-    if (currencytypeone && currencytypetwo && inputvalue) {
+    if (currencytypeone && currencytypetwo && inputvalue && !NaN(inputvalue)) {
       fetch(
         `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currencytypeone}.json`,
         {
