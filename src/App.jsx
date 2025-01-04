@@ -15,6 +15,7 @@ function App() {
   const [inputvalue, inputsetvalue] = useState("");
   const [outputbox, outputvalue] = useState("");
   const [currencies, setcurrencies] = useState([]);
+  const[message,setmessage]=useState("")
 
   useEffect(() => {
     fetch(
@@ -32,7 +33,7 @@ function App() {
   }, []);
 
   function Calculation() {
-    if (currencytypeone && currencytypetwo && inputvalue) {
+    if (currencytypeone && currencytypetwo && !isNaN(inputvalue)) {
       fetch(
         `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currencytypeone}.json`,
         {
@@ -46,6 +47,9 @@ function App() {
           outputvalue(result);
         })
       );
+    }
+    if(isNaN(inputvalue)){
+          setmessage("please enter the numerical value !")
     }
   }
   function swap() {
@@ -131,7 +135,10 @@ function App() {
             >
               convert
             </button>
+
           </div>
+        <p className="font-sans font-semibold md:text-lg text-sm text-slate-700 capitalize mt-5 text-center ">{message}</p>
+
         </div>
       </div>
       <div className="flex justify-center items-center text-center">
