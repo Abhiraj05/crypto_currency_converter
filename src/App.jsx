@@ -61,7 +61,7 @@ function App() {
             <div>
               <img className="md:w-24 md:h-24 w-20 h-20 text-center" src={cryptologo} alt="" />
             </div>
-            <div className="uppercase font-sans font-extrabold md:font-bold md:text-xl text-lg text-slate-600 ">
+            <div className="uppercase font-archivo font-extrabold md:font-bold md:text-xl text-lg text-slate-600 ">
               <h1 className="first-letter:text-yellow-300">crypto</h1>
               <h1 className="first-letter:text-blue-400"> currency</h1>
               <h1 className="first-letter:text-yellow-300">converter</h1>
